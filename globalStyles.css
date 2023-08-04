@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+html{
+    font-size: 10px;
+    overflow: hidden;
+}
+:root{
+    --green-1:#26643b;
+    --green-2:#a2de96;
+    --lightgreen-1:#d6e5d8;
+    --lightgreen-2:#f5fcf4;
+    --black-1:#3b413a;
+    --black-2:#3f3c3c;
+    --black-3:#5b6359;
+    --white-1:#e8e8e8;
+}
+body{
+    background-color: var(--lightgreen-2);
+    overflow-x: hidden;
+}
+/* overflow is used to not make use od horizontol scrollbar */
+/*The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.*/
+section{
+    padding: 100px 0;
+}
+ /* if screen is smalller like mobile phone */
+@media only screen and (max width: 768px){
+    section{
+        padding: 50px 0;
+    }
+}
+
+.container{
+    max-width: 1200px;  /* the content remain inside 1200px*/
+    width: 90%;
+    margin: 0 auto; /* to keep everything in the centre */
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-size: 1.8rem;   /* 1.8rem is equal to 18px*/
+}
+a{
+    display: inline-block; /*put several links in a row, and they will display in a line.*/
+    text-decoration: none;
+}
